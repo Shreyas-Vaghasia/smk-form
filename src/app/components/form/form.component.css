@@ -1,0 +1,17 @@
+.example-form {
+    margin: 2%;
+    width: 80%;
+    margin:auto;
+    padding: 5%;
+    background-color: white;
+    margin-top: 1%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+    
