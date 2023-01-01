@@ -90,6 +90,29 @@ export class FormComponent implements OnInit {
     countryCode: new FormControl('', [
       Validators.required,
     ]),
+    address: new FormGroup({
+      nativeVillagePinCode: new FormControl('', [
+        Validators.required,
+      ]),
+      nativeVillageName: new FormControl('', [
+        Validators.required,
+      ]),
+      presentVillagePinCode: new FormControl('', [
+        Validators.required,
+      ]),
+      presentVillageName: new FormControl('', [
+        Validators.required,
+      ]),
+
+
+    }
+    )
+  })
+
+
+  //Addres Form
+
+  addrressForm = new FormGroup({
     nativeVillagePinCode: new FormControl('', [
       Validators.required,
     ]),
@@ -102,9 +125,7 @@ export class FormComponent implements OnInit {
     presentVillageName: new FormControl('', [
       Validators.required,
     ]),
-
-  }
-  );
+  })
   bloodGroups = [
     { value: 'A+', viewValue: 'A+' },
     { value: 'A-', viewValue: 'A-' },

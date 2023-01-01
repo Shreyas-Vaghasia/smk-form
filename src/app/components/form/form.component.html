@@ -1,6 +1,7 @@
+<app-profile-card></app-profile-card>
+
+
 <form class="example-form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
-
-
     <table class="example-full-width" cellspacing="0">
         <tr>
             <td>
@@ -159,6 +160,18 @@
             </td>
         </tr>
 
+       
+
+    </table>
+
+
+
+
+
+</form>
+
+<form class="example-form" [formGroup]="addrressForm" (ngSubmit)="onSubmit()">
+    <table>
         <tr>
             <td>
                 <mat-form-field class="example-full-width">
@@ -213,9 +226,7 @@
                 </mat-form-field>
             </td>
         </tr>
-        <button mat-raised-button color="primary" type="submit">Submit</button>
     </table>
-
-
+    <button mat-raised-button color="primary" type="submit">Submit</button>
 
 </form>
